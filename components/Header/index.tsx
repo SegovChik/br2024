@@ -25,36 +25,36 @@ const Header = () => {
       <nav className="mx-auto flex max-w-7xl items-center justify-between py-6" aria-label="Global">
         <div className="hidden sm:flex md:flex lg:flex-1">
           <a href="/" className="-m-1.5 p-1.5">
-            <span className="">Facterless</span>
+            <span className="text-[25px] font-light">FACTERLESS</span>
           </a>
         </div>
         <div className="flex sm:hidden md:hidden lg:hidden">
           <a href="/" className="-m-1.5 p-1.5">
-            <span className="sr-only">Facterless</span>
+            <span className="sr-only">FACTERLESS</span>
           </a>
         </div>
         <PopoverGroup className="hidden lg:flex lg:gap-x-12">
-          <a href="#" className="text-[16px] text-black hover:underline">
-            How it Works
+          <a href="#" className="text-[16px] tracking-[.25em] hover:text-[#20A9F7]">
+            Search
           </a>
-          <a href="#" className="text-[16px] text-black hover:underline">
-            Telegram
+          <a href="#" className="text-[16px] tracking-[.25em] hover:text-[#20A9F7]">
+            Top Influencers
           </a>
-          <a href="#" className="text-[16px] text-black hover:underline">
-            Twitter X
+          <a href="#" className="text-[16px] tracking-[.25em] hover:text-[#20A9F7]">
+            About Us
           </a>
         </PopoverGroup>
         <div className="lg:flex lg:flex-1 lg:justify-end">
           {!address ? (
               <Button
                 onClick={() => open()}
-                className="inline-flex items-center gap-2 rounded-md bg-gray-700 py-1.5 px-3 text-sm/6 font-semibold text-white shadow-inner shadow-white/10 focus:outline-none data-[hover]:bg-gray-600 data-[open]:bg-gray-700 data-[focus]:outline-1 data-[focus]:outline-white">
+                className="inline-flex items-center gap-2 rounded-2xl bg-gradient-to-r from-[#20A9F7] to-[#1045FF] py-3 px-6 text-[16px] font-semibold focus:outline-none">
                   Connect Wallet
               </Button>
           ) : (
             <Button
               onClick={() => disconnect()}
-              className="inline-flex items-center gap-2 rounded-md bg-gray-700 py-1.5 px-3 text-sm/6 font-semibold text-white shadow-inner shadow-white/10 focus:outline-none data-[hover]:bg-gray-600 data-[open]:bg-gray-700 data-[focus]:outline-1 data-[focus]:outline-white">
+              className="inline-flex items-center gap-2 rounded-2xl bg-gradient-to-r from-[#20A9F7] to-[#1045FF] py-3 px-6 text-[16px] font-semibold focus:outline-none">
                 Disconnect
             </Button>
           )}
