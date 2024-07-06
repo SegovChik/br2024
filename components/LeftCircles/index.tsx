@@ -1,6 +1,6 @@
 const LeftCircles = () => {
   return (
-    <div className="absolute left-0 right-10 top-10 w-full h-screen">
+    <div className="absolute left-0 right-10 top-10">
       <svg width="552" height="1000" viewBox="0 0 552 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g opacity="0.45" filter="url(#filter0_f_2_332)">
           <ellipse cx="299.282" cy="354" rx="299.282" ry="354"
